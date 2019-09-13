@@ -1,0 +1,407 @@
+[
+    {
+    "recomendador": "Lucy",
+    "titulo": "What we do in the shadows",
+    "pais": "Nueva Zelanda",
+    "formato": "Pelicula",
+    "generos": ["Comedia"],
+    "linkito": "https://www.imdb.com/title/tt3416742",
+    "imagen": "https://i0.wp.com/whatson.sling.com/wp-content/uploads/2019/03/what-we-do-in-the-shadows-fx-hero-image.jpg?fit=800%2C450&ssl=1"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "The Way Way Back",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt1727388",
+    "imagen": "https://resizing.flixster.com/yZsBTZp054ZFRWmH6HBtixlC530=/206x305/v1.bTsxMTE3NTM5NTtqOzE4MjY0OzEyMDA7ODAwOzEyMDA"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Garden State",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0333766",
+    "imagen": "https://resizing.flixster.com/B0PxyP5c68lg64rD-bdXowiS-Ac=/fit-in/200x296.2962962962963/v1.bTsxMTIwODQ3MTtqOzE4MjY0OzEyMDA7MTIwMDsxNjAw"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Dans la maison",
+    "pais": "Francia",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Thriller", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt1964624/",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/71JONlVvglL._SL1170_.jpg"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Le premier jour du reste de ta vie",
+    "pais": "Francia",
+    "formato": "Pelicula",
+    "generos": ["Drama"],
+    "linkito": "https://www.imdb.com/title/tt0926759",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYjc3MzI4OTMtMWZjMS00YTkyLThmMDAtMTJhYzViMDk4MmI5XkEyXkFqcGdeQXVyNjcyNjE2OTk@._V1_.jpg"
+    },
+    {
+    "recomendador": "Loretus",
+    "titulo": "Submarine",
+    "pais": "Reino Unido",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt1440292/",
+    "imagen": "http://es.web.img3.acsta.net/c_215_290/medias/nmedia/18/93/96/48/20290497.jpg"
+    },
+    {
+    "recomendador": "Paula",
+    "titulo": "The Club",
+    "pais": "Chile",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Thriller", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt4375438/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTY2OTE4NTUzMl5BMl5BanBnXkFtZTgwNDY3NzA1NzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Taxi Teherán",
+    "pais": "Irán",
+    "formato": "Pelicula",
+    "generos": ["Comedia, Drama"],
+    "linkito": "https://www.imdb.com/title/tt4359416/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Taxi_poster.png/220px-Taxi_poster.png"
+    },
+    {
+    "recomendador": "Sara",
+    "titulo": "Lion",
+    "pais": "Australia",
+    "formato": "Pelicula",
+    "generos": ["Drama"],
+    "linkito": "https://www.imdb.com/title/tt3741834/",
+    "imagen": "https://www.jbhifi.com.au/FileLibrary/ProductResources/Images/211879-L-LO.jpg"
+    },
+    {
+    "recomendador": "Sara",
+    "titulo": "Force Majeure",
+    "pais": "Suecia",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt2121382",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/89/Force_Majeure_poster.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "El Ángel",
+    "pais": "Argentina",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Thriller", "Drama", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt7204348/",
+    "imagen": "https://pics.filmaffinity.com/El_ngel-333109410-large.jpg"
+    },
+    {
+    "recomendador": "Julia",
+    "titulo": "La piedra de la paciencia",
+    "pais": "Afganistán",
+    "formato": "Pelicula",
+    "generos": ["Drama"],
+    "linkito": "https://www.imdb.com/title/tt1638353/",
+    "imagen": "https://pics.filmaffinity.com/La_piedra_de_la_paciencia-356172976-large.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "Killing Eve",
+    "pais": "Estados Unidos",
+    "formato": "Serie",
+    "generos": ["Comedia", "Thriller", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt7016936/",
+    "imagen": "https://unsoloclic.info/wp-content/uploads/2019/05/Killing-Eve-Season-2.jpg"
+    },
+    {
+    "recomendador": "Mani",
+    "titulo": "Capharnaúm",
+    "pais": "Líbano",
+    "formato": "Pelicula",
+    "generos": ["Drama"],
+    "linkito": "https://www.imdb.com/title/tt8267604/",
+    "imagen": "https://m.cinesargentinos.com.ar/poster/8201-cafarnaum.jpg?1549384117"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "Juste la Fin du Monde",
+    "pais": "Francia",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt4645368/",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNtsZ7V2HrrH8h4kK2vgmdK-lYZuuA0n857-6IKkbyShWhBg9u"
+    },
+    {
+    "recomendador": "Sara",
+    "titulo": "On body and soul",
+    "pais": "Hungría",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt5607714/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTA1NmIxMmEtNTdhNS00MmVkLWI1ZTEtN2FhNTU2NDAzYzNhXkEyXkFqcGdeQXVyMDYxMTUwNg@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "El diablo es magnífico",
+    "pais": "Chile",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama", "Queer", "Documental"],
+    "linkito": "https://www.imdb.com/title/tt6582868/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BNGQxNDgwZjgtOTZjYS00ZTM3LThkZjgtMzQ4NGNiZjRjNTk1XkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Free Solo",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Documental"],
+    "linkito": "https://www.imdb.com/title/tt7775622/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMjMwYjcwNWQtNTQ5YS00MzVlLTkxYzMtNDIwZWIxZTE4Zjg2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+    },
+    {
+    "recomendador": "Lucy",
+    "titulo": "Incendies",
+    "pais": "Canadá",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt1255953/",
+    "imagen": "https://cinepsicoanalisisycultura.files.wordpress.com/2016/11/62.jpg?w=648"
+    },
+    {
+    "recomendador": "Julia",
+    "titulo": "God's Own Country",
+    "pais": "Reino Unido",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt5635086/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BNjRhYzk2NDAtYzA1Mi00MmNmLWE1ZjQtMDBhZmUyMTdjZjBiXkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Anonymous",
+    "titulo": "Dogman",
+    "pais": "Italia",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt6768578/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Dogman_poster.png/220px-Dogman_poster.png"
+    },
+    {
+    "recomendador": "Julia",
+    "titulo": "Weekend",
+    "pais": "Reino Unido",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt1714210/",
+    "imagen": "http://es.web.img3.acsta.net/c_215_290/medias/nmedia/18/95/31/68/20396213.jpg"
+    },
+    {
+    "recomendador": "Paula",
+    "titulo": "Gloria",
+    "pais": "Chile",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt2425486/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Gloria_poster.jpg/220px-Gloria_poster.jpg"
+    },
+    {
+    "recomendador": "Anonymous",
+    "titulo": "Midnight Traveler",
+    "pais": "Rusia",
+    "formato": "Pelicula",
+    "generos":[ "Drama"],
+    "linkito": "https://www.imdb.com/title/tt8923500/",
+    "imagen": "https://www.docandfilm.com/wp-content/uploads/2015/11/P_1871-440x656.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Brief encounter",
+    "pais": "EEUU",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance", "Documental"],
+    "linkito": "https://www.imdb.com/title/tt0037558/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BYWQ0MGNjOTYtMWJlNi00YWMxLWFmMzktYjAyNTVkY2U1NWNhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Oleg y las raras artes",
+    "pais": "España",
+    "formato": "Documental",
+    "generos": ["Biográfico", "Documental"],
+    "linkito": "https://www.imdb.com/title/tt5489948/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BZmRmNDI4ZDMtZTMyNy00MDM5LWE0NjAtMGZkZTFmYzUzZGY5XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "La mujer de arena",
+    "pais": "Japón",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0058625/",
+    "imagen": "https://pics.filmaffinity.com/La_mujer_de_la_arena-825837663-large.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Konopielka",
+    "pais": "Polonia",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0085807/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BNGUzYzBlMTgtODQ5OC00NDdmLWIzN2ItNTNjOGQzMjhlYTllXkEyXkFqcGdeQXVyMTc4MzI2NQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Sayat Nova",
+    "pais": "URSS",
+    "formato": "Pelicula",
+    "generos": ["Thriller"],
+    "linkito": "https://www.imdb.com/title/tt0063555/",
+    "imagen": "https://www.chisholm-poster.com/large/CL45414.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Soy curiosa",
+    "pais": "Suecia",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0061834/",
+    "imagen": "https://pics.filmaffinity.com/Soy_curiosa_Amarillo-407057648-large.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Smithereens",
+    "pais": "EEUU",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0084698/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/7/73/DVD_cover_of_Smithereens.jpg/220px-DVD_cover_of_Smithereens.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "The House Holder",
+    "pais": "India",
+    "formato": "Pelicula",
+    "generos": ["Romance"],
+    "linkito": "https://www.imdb.com/title/tt0057162/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/The_Householder%2C_1963_English_film.jpg/220px-The_Householder%2C_1963_English_film.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "John and Mary",
+    "pais": "EEUU",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0064513/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/John_and_mary_poster.jpg/220px-John_and_mary_poster.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "De amor se vive",
+    "pais": "Italia",
+    "formato": "Documental",
+    "generos": ["Drama", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt0167863/",
+    "imagen": "https://www.bacanalnica.com/wp-content/uploads/images/stories/blog/administrator/ijorge/deamorsevive2.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Sed de amor",
+    "pais": "Japón",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0060082/",
+    "imagen": "https://pics.filmaffinity.com/Sed_de_amor-655523799-mmed.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Un chant d'amour",
+    "pais": "Francia",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0043084/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTI4MzA3MDM0N15BMl5BanBnXkFtZTcwNjQxODE0MQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Blanca",
+    "titulo": "Whos that knoking at my door?",
+    "pais": "EEUU",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance"],
+    "linkito": "https://www.imdb.com/title/tt0063803/",
+    "imagen": "https://static.rogerebert.com/uploads/movie/movie_poster/whos-that-knocking-at-my-door-1969/large_1iuAhETd7dpBzv6FnDq5gSyxXkW.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "Liquid Sky",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt0085852/",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/LiquidSkyPoster3.jpg/220px-LiquidSkyPoster3.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "Sunday, Bloody Sunday",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Drama", "Romance", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt0067805/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMWFmMzQ3ZmUtMzliMi00Y2ZiLWEzNzUtOGMzZTM4OTlhODgxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Anonymous",
+    "titulo": "A quiet place",
+    "pais": "Estados Unidos",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Drama"],
+    "linkito": "https://www.imdb.com/title/tt6644200/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "Amor Eterno",
+    "pais": "España",
+    "formato": "Pelicula",
+    "generos": ["Thriller", "Queer"],
+    "linkito": "https://www.imdb.com/title/tt4077768/",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BMTk4MTc3NzE2Nl5BMl5BanBnXkFtZTgwNjUwMTA5MjE@._V1_SY1000_CR0,0,699,1000_AL_.jpg"
+    },
+    {
+    "recomendador": "Julia",
+    "titulo": "La Dictadura Perfecta",
+    "pais": "México",
+    "formato": "Pelicula",
+    "generos": ["Comedia", "Drama"],
+    "linkito": "https://www.filmaffinity.com/es/film854174.html",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BOTcwODIwNzk1MF5BMl5BanBnXkFtZTgwMDI3MzY1MjE@._V1_UY268_CR2,0,182,268_AL_.jpg"
+    },
+    {
+    "recomendador": "Clara",
+    "titulo": "El Sabor de las Cerezas",
+    "pais": "Irán",
+    "formato": "Pelicula",
+    "generos": ["Drama"],
+    "linkito": "https://www.imdb.com/title/tt0120265/",
+    "imagen": "https://pics.filmaffinity.com/ta_m_e_guilass-136862287-mmed.jpg"
+    },
+    {
+    "recomendador": "Loretus",
+    "titulo": "La chica del puente",
+    "pais": "Francia",
+    "formato": "Pelicula",
+    "generos": ["Drama","Romance"],
+    "linkito": "https://www.imdb.com/title/tt0144201/",
+    "imagen": "https://pics.filmaffinity.com/La_chica_del_puente-714860783-large.jpg"
+    },
+    {
+        "recomendador": "Loretus",
+        "titulo": "3-Iron",
+        "pais": "Corea del Sur",
+        "formato": "Pelicula",
+        "generos": ["Drama","Romance"],
+        "linkito": "https://www.imdb.com/title/tt0423866/",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BMTM1ODIwNzM5OV5BMl5BanBnXkFtZTcwNjk5MDkyMQ@@._V1_.jpg"
+        }
+]
