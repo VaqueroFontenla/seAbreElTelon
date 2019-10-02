@@ -1,0 +1,17 @@
+<ng-container *ngIf="filteredFilms">
+    <div class="container-fluid row  justify-content-around">
+        <div class="card" style="width: 18rem;" *ngFor="let filteredFilm of filteredFilms; let i = index">
+            <img src="{{filteredFilm.imagen}}" class="card-img-top" alt="Film image">
+            <div class="card-body">
+                <h5 class="card-title">{{filteredFilm.titulo}}</h5>
+                <p class="card-text" *ngIf="!readMore">{{filteredFilm.shortDescription}}</p>
+                <span (click)="onSelectRead(i)">... Leer más</span>
+                <p class="card-text" *ngIf="readMore">{{filteredFilm.descripcion}}</p>
+                <a href="{{filteredFilm.linkito}}" class="btn btn-primary">+Info</a>
+            </div>
+            </div>
+    
+    </div>
+</ng-container>
+
+

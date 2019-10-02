@@ -1,0 +1,15 @@
+<form>
+    <fieldset>
+        <div class="input-group">
+                <p-autoComplete
+                    class="autocomplete--search"
+                    [formControl]="filterFilm"
+                    [suggestions]="suggestedFilms" 
+                    (completeMethod)="searchFilms($event)"
+                    (onSelect)="onSelectFilms($event)"
+                    field="titulo" 
+                    [minLength]="3">
+            </p-autoComplete>
+        </div>
+    </fieldset>
+</form>

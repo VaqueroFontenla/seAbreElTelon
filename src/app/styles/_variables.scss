@@ -1,0 +1,39 @@
+//* === COLORS === */
+
+$tangerine: #E37222;
+$teal: #07889B;
+$powder: #66B9BF;
+$tan: #EEAA7B;
+$neutral: #EFEFEF;
+
+//Brand colors
+$primary-color: $tangerine;
+$secondary-color: $teal;
+$tertiary-color: $powder;
+$quaternary-color: $tan;
+//States
+$danger-color: red;
+// Achromatic axis
+$base:$neutral;
+
+//* === FIN COLORS === */
+
+//* === SPACERS === */
+$gutter-value: 30;
+$gutter: $gutter-value * 1px;
+$gutter-5xl: $gutter * 10;
+$gutter-4xl: $gutter * 6;
+$gutter-3xl: $gutter * 5;
+$gutter-2xl: $gutter * 4;
+$gutter-xl: $gutter * 3;
+$gutter-l: $gutter * 2;
+$gutter-s: $gutter / 2;
+$gutter-xs: $gutter / 3;
+$gutter-2xs: $gutter / 4;
+$gutter-3xs: $gutter / 5;
+$gutter-4xs: $gutter / 6;
+$gutter-5xs: $gutter / 10;
+//* === END SPACERS === */
+
+
+

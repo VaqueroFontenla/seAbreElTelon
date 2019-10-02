@@ -3,3 +3,5 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <film-filter (onFilterChange)="onFilterChange($event)"></film-filter>
+  <film-panel [filteredFilms]="filteredFilms"></film-panel>

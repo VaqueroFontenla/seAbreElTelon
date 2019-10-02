@@ -1,0 +1,44 @@
+p-autoComplete {
+    width: 100%;
+    display: block;
+
+    &.autocomplete--search {
+        .ui-inputtext {
+            background: $base url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjFweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjEgMjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogICAgICAgIDxnIGlkPSJzZWFyY2giIGZpbGw9IiNERUUwRTEiIGZpbGwtcnVsZT0ibm9uemVybyI+DQogICAgICAgICAgICA8cGF0aCBkPSJNMjAuODU1NDI3LDE5Ljc1MjE2MDUgTDE1LjU2NDY2OTcsMTQuNDYxNDAzMyBDMTUuNDcwMzM4NCwxNC4zNjcwNzE5IDE1LjM0NzI5NzUsMTQuMzE3ODU1NiAxNS4yMTYwNTM5LDE0LjMxNzg1NTYgTDE0Ljc5MzYxMzYsMTQuMzE3ODU1NiBDMTYuMjAwMzgwOCwxMi43OTYyNTAyIDE3LjA2MTY2NjksMTAuNzY2MDc1OSAxNy4wNjE2NjY5LDguNTMwODMzNDYgQzE3LjA2MTY2NjksMy44MTgzNjgyNCAxMy4yNDMyOTg3LDAgOC41MzA4MzM0NiwwIEMzLjgxODM2ODI0LDAgMCwzLjgxODM2ODI0IDAsOC41MzA4MzM0NiBDMCwxMy4yNDMyOTg3IDMuODE4MzY4MjQsMTcuMDYxNjY2OSA4LjUzMDgzMzQ2LDE3LjA2MTY2NjkgQzEwLjc2NjA3NTksMTcuMDYxNjY2OSAxMi43OTYyNTAyLDE2LjIwMDM4MDggMTQuMzE3ODU1NiwxNC43OTc3MTUgTDE0LjMxNzg1NTYsMTUuMjE2MDUzOSBDMTQuMzE3ODU1NiwxNS4zNDcyOTc1IDE0LjM3MTE3MzMsMTUuNDcwMzM4NCAxNC40NjE0MDMzLDE1LjU2NDY2OTcgTDE5Ljc1MjE2MDUsMjAuODU1NDI3IEMxOS45NDQ5MjQ2LDIxLjA0ODE5MSAyMC4yNTY2MjgxLDIxLjA0ODE5MSAyMC40NDkzOTIxLDIwLjg1NTQyNyBMMjAuODU1NDI3LDIwLjQ0OTM5MjEgQzIxLjA0ODE5MSwyMC4yNTY2MjgxIDIxLjA0ODE5MSwxOS45NDQ5MjQ2IDIwLjg1NTQyNywxOS43NTIxNjA1IFogTTguNTMwODMzNDYsMTUuNzQ5MjMxIEM0LjU0MDIwOCwxNS43NDkyMzEgMS4zMTI0MzU5MiwxMi41MjE0NTg5IDEuMzEyNDM1OTIsOC41MzA4MzM0NiBDMS4zMTI0MzU5Miw0LjU0MDIwOCA0LjU0MDIwOCwxLjMxMjQzNTkyIDguNTMwODMzNDYsMS4zMTI0MzU5MiBDMTIuNTIxNDU4OSwxLjMxMjQzNTkyIDE1Ljc0OTIzMSw0LjU0MDIwOCAxNS43NDkyMzEsOC41MzA4MzM0NiBDMTUuNzQ5MjMxLDEyLjUyMTQ1ODkgMTIuNTIxNDU4OSwxNS43NDkyMzEgOC41MzA4MzM0NiwxNS43NDkyMzEgWiIgaWQ9IlNoYXBlIj48L3BhdGg+DQogICAgPC9nPg0KPC9zdmc+") no-repeat center right $gutter-2xs !important;
+            padding-right: 2rem !important;
+        }
+    }
+
+    .ui-inputtext,
+    .ui-autocomplete-multiple-container,
+    .ui-autocomplete,
+    .ui-autocomplete-input {
+        width: 100% !important;
+    }
+
+    .ui-autocomplete-list,
+    .ui-autocomplete-items {
+        list-style: none;
+    }
+
+    &.is-invalid .ui-autocomplete-input,
+    &.is-invalid .ui-autocomplete-multiple-container {
+        border: 1px solid $danger-color !important;
+    }
+
+    &.is-invalid ~ .invalid-feedback {
+        display: block !important;
+    }
+
+    .autocomplete__main-info {
+        font-size: 0.875rem;
+    }
+
+    .autocomplete__secondary-info {
+        display: block;
+        font-size: 0.75rem;
+        color: $neutral;
+    }
+
+
+}
