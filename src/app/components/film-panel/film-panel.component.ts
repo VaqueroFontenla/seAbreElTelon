@@ -19,10 +19,8 @@ export class FilmPanelComponent implements OnInit {
 	}
 
     onSelectRead(i) {
-		this.readMore = !this.readMore;
-		this.readMore 
-			? this.filteredFilms[i].shortDescription = this.filteredFilms[i].descripcion
-			: this.filteredFilms[i].descripcion = this.filteredFilms[i].shortDescription
+		this.filteredFilms[i].showShortDescription = !this.filteredFilms[i].showShortDescription;
+	
 	}
 
 }

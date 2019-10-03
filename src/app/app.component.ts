@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FilmService } from './services/film.service';
 import { Film } from './models/film';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { Genre } from './models/genre';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,9 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class AppComponent {
 	title = 'seAbreElTelon';
 	filteredFilms: Film[];
+	recommenders: string[];
+	genres: Genre[][];
+	formats: string[];
 
 	constructor(
 		private filmService: FilmService,
@@ -25,11 +28,13 @@ export class AppComponent {
 	
 	}
 
+
 	private manipulateDescription(): void {
 		let filmWithShortDescription: Film[] = [];
 		filmWithShortDescription = this.filteredFilms.map(filteredFilm => {
 			return {
-				shortDescription: filteredFilm.descripcion.substring(200,-1),
+				shortDescription: filteredFilm.descripcion.substring(150,-1),
+				showShortDescription: true,
 				...filteredFilm
 			}
 		})
@@ -41,6 +46,9 @@ export class AppComponent {
 			.getData()
 			.subscribe(filteredFilms => {
 				this.filteredFilms = filteredFilms;
+				this.recommenders = this.filteredFilms.map(filteredFilm => filteredFilm.recomendador);
+				this.genres = this.filteredFilms.map(filteredFilm => filteredFilm.generos);
+				this.formats = this.filteredFilms.map(filteredFilm => filteredFilm.formato);
 				this.manipulateDescription();
 			});
 	}

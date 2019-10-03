@@ -1,15 +1,30 @@
-<form>
+<form *ngIf="recommenders">
     <fieldset>
-        <div class="input-group">
-                <p-autoComplete
-                    class="autocomplete--search"
-                    [formControl]="filterFilm"
-                    [suggestions]="suggestedFilms" 
-                    (completeMethod)="searchFilms($event)"
-                    (onSelect)="onSelectFilms($event)"
-                    field="titulo" 
-                    [minLength]="3">
-            </p-autoComplete>
-        </div>
+        <div class="filter">
+            <div class="row">
+                <div class="input-group">
+                        <p-autoComplete
+                            class="autocomplete--search"
+                            [formControl]="filterFilm"
+                            [suggestions]="suggestedFilms" 
+                            (completeMethod)="searchFilms($event)"
+                            (onSelect)="onSelectFilms($event)"
+                            field="titulo" 
+                            [minLength]="3">
+                    </p-autoComplete>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+                <select class="custom-select" name="recommender" id="recommender" [formControl]="filterRecommender" (change)="onSelectRecommender($event)">
+                    <option value="recommender" *ngFor="let recommender of filteredRecommenders">{{recommender}}</option>
+                </select>
+                <select class="custom-select" name="genre" id="genre" [formControl]="filterGenre" (change)="onSelectGenre($event)">
+                        <option value="genre" *ngFor="let genre of filteredGenres">{{genre}}</option>
+                </select>
+                <select class="custom-select" name="format" id="format" [formControl]="filterFormat" (change)="onSelectFormat($event)">
+                        <option value="format" *ngFor="let genre of filteredFormats">{{genre}}</option>
+                </select>
+            </div>
+        </div>   
     </fieldset>
 </form>

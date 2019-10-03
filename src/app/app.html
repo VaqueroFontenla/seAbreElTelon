@@ -3,5 +3,12 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <film-filter (onFilterChange)="onFilterChange($event)"></film-filter>
-  <film-panel [filteredFilms]="filteredFilms"></film-panel>
+  	<div *ngIf="filteredFilms">
+      	<film-filter (onFilterChange)="onFilterChange($event)"
+					  [recommenders]="recommenders" 
+					  [genres]="genres"
+					  [formats]="formats">
+		</film-filter>
+  	  	<film-panel [filteredFilms]="filteredFilms"></film-panel> 
+  	</div>
+ 

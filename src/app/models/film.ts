@@ -1,3 +1,5 @@
+import { Genre } from './genre';
+
 export class Film {
     
     recomendador: string;
@@ -5,9 +7,10 @@ export class Film {
     descripcion:string;
     pais: string;
     formato: string;
-    generos:string[];
+    generos:Genre[];
     linkito:string;
     imagen: string;
     shortDescription?: string;
+    showShortDescription?:boolean;
 
 }
