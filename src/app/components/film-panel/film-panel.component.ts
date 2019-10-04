@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 
 import { Film } from '../../models/film';
 
-
 @Component({
   selector: 'film-panel',
   templateUrl: './film-panel.html',

@@ -4,10 +4,25 @@
         text-decoration: underline;
     }
 }
+
 .card-footer {
     display:flex;
     justify-content: center;
     background-color: $light;
     border: none;
 
+}
+
+.jumbotron {
+    color: $medium-gray;
+}
+
+.film__item {
+    font-size: 1.2rem;
+    &-title {
+        font-weight: bold;
+    }
+    &-contens {
+        margin-bottom: 1rem;
+    }
 }

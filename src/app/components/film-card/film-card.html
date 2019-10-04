@@ -1,8 +1,28 @@
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+
+<div class="jumbotron" *ngIf="film">
+	<div class="row justify-content-end">
+		<a [routerLink]="['/home']" class='btn btn-lg btn-info'>Volver</a>
+	</div>
+	<h1 class="display-4">{{ film.titulo | uppercase}} <small>[ por {{film.recomendador}}]</small></h1>
+	<hr class="my-4">
+	<div class="row">
+		<div class='col-md-4'>
+			<img [src]='film.imagen' [alt]='film.imagen' class='img-fluid'>
+			<br><br>
+			<a href="{{ film.linkito}}" target="blank" class='btn btn-info btn-lg'>Link imdb</a>
+		</div>
+		<div class='col-md-8'>
+				<h3 class="text-center">{{ film.titulo }}</h3>
+				<span class="film__item film__item-title">Descripción:</span><br>
+				<p class="film__item film__item-content">{{ film.descripcion }}</p><br>
+				<span class="film__item film__item-title">Pais:</span><br>
+				<span class="film__item film__item-content">{{ film.pais }}</span><br>
+				<span class="film__item film__item-title">Genéros:</span><br>
+				<span class="film__item film__item-content">{{ film.generos }}</span><br>
+				<span class="film__item film__item-title">Formato:</span><br>
+				<span class="film__item film__item-content">{{ film.formato }}</span><br>
+				
+		</div>
+	</div>
 </div>
+

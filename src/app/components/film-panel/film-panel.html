@@ -9,10 +9,13 @@
                 <p class="card-text" *ngIf="readMore">{{filteredFilm.descripcion}}</p> 
             </div>
             <div class="card-footer">
-                <button (click)='showFilmCard(i)' type="button" class="btn btn-info btn-block">Más info ...</button>
+                <a [routerLink]="['/film',i]" class='btn btn-info btn-block'>Ver más info ...</a>
+                <!-- <button routerLink="/film/i" type="button" class="btn btn-info btn-block">Más info ...</button> -->
             </div> 
         </div>
     </div>
 </ng-container>
+		
+	
 
 

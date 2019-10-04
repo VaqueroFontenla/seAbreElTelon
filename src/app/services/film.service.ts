@@ -6,14 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FilmService {
-  url = '../assets/data/data.json';
-  constructor(
-      private http: HttpClient) {
+	url = '../assets/data/data.json';
+	constructor(
+		private http: HttpClient) {
 
-  }
+	}
 
-  getData(): Observable<any>{
-    return this.http.get(this.url);
+	getData(): Observable<any>{
+		return this.http.get(this.url);
 
-  }
+	}
 }
