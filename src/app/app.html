@@ -1,14 +1,20 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  	<div *ngIf="filteredFilms">
-      	<film-filter (onFilterChange)="onFilterChange($event)"
-					  [recommenders]="recommenders" 
-					  [genres]="genres"
-					  [formats]="formats">
+<div class="container-fluid container-fluid__wrapper">
+	<div class=text-center>
+			<h1 class="title"> {{ title }}!</h1>
+	</div>
+	
+	<div *ngIf="filteredFilms">
+		<film-filter 	
+				(onFilterFilmChange)="onFilterFilmChange($event)"
+				(onFilterRecommenderChange)="onFilterRecommenderChange($event)"
+				(onFilterGenreChange)="onFilterGenreChange($event)"
+				(onFilterFormatChange)="onFilterFormatChange($event)"
+				[recommenders]="filteredRecommenders" 
+				[genres]="filteredGenres"
+				[formats]="filteredFormats">
 		</film-filter>
-  	  	<film-panel [filteredFilms]="filteredFilms"></film-panel> 
-  	</div>
+		<film-panel [filteredFilms]="filteredFilms"></film-panel> 
+	</div>
+</div>
+  
  

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FilmService } from '../../services/film.service';
+import { Router } from '@angular/router';
+
 import { Film } from '../../models/film';
+
 
 @Component({
   selector: 'film-panel',
@@ -12,10 +14,14 @@ export class FilmPanelComponent implements OnInit {
 	readMore: boolean;
 
 	constructor(
+		private router: Router,
 	) { }
 
 	ngOnInit() {
 		this.readMore = false;
+	}
+	showFilmCard(i) {
+		this.router.navigate(['/film', i]);
 	}
 
     onSelectRead(i) {

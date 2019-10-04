@@ -1,0 +1,35 @@
+body {
+    background-color: $quaternary-color;
+    font-family: $chuchi;
+}
+
+.title {
+    font-weight: 700;
+    color: $primary-color;
+    font-size: 4rem;
+}
+.container-fluid {
+    &__wrapper{
+        width: 80vw;
+        height: 100%;
+        padding: 30px;
+        border: 3px solid $primary-color;
+        background-color: $light;
+        position: relative;
+    }
+}
+
+.nav-filter {
+    margin: $gutter-s;
+    display:flex;
+    justify-content: space-between;
+    &__item {
+        border-radius:4px; 
+        padding: $gutter-xs;
+        margin-left: 1rem;
+        color: $medium-gray;
+        text-transform: uppercase;
+    }
+
+
+}

@@ -15,11 +15,13 @@ $quaternary-color: $tan;
 $danger-color: red;
 // Achromatic axis
 $base:$neutral;
+$medium-gray: #7d868d;
+$light: #fff;
 
 //* === FIN COLORS === */
 
 //* === SPACERS === */
-$gutter-value: 30;
+$gutter-value:  30;
 $gutter: $gutter-value * 1px;
 $gutter-5xl: $gutter * 10;
 $gutter-4xl: $gutter * 6;

@@ -1,0 +1,13 @@
+.card-text {
+    &__link {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+.card-footer {
+    display:flex;
+    justify-content: center;
+    background-color: $light;
+    border: none;
+
+}

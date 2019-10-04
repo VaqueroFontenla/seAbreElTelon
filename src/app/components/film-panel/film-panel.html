@@ -1,18 +1,17 @@
 <ng-container *ngIf="filteredFilms">
     <div class="container-fluid row  justify-content-around p-4">
-        <div class="card m-4" style="width: 18rem;" *ngFor="let filteredFilm of filteredFilms; let i = index">
+        <div class="card m-4" style="width: 15rem;" *ngFor="let filteredFilm of filteredFilms; let i = index">
             <img src="{{filteredFilm.imagen}}" class="card-img-top" alt="Film image">
             <div class="card-body">
                 <h5 class="card-title" >{{filteredFilm.titulo}}</h5>
-                <p class="card-text" *ngIf="filteredFilm.showShortDescription">{{filteredFilm.shortDescription}}</p>
-                <p class="card-text" *ngIf="!filteredFilm.showShortDescription">{{filteredFilm.descripcion}}</p>
-                <span (click)="onSelectRead(i)">... Leer más</span>
-                <p class="card-text" *ngIf="readMore">{{filteredFilm.descripcion}}</p>
-                <!-- <p class="card-text" *ngIf="readMore">{{filteredFilm.descripcion}}</p> -->
-                <a href="{{filteredFilm.linkito}}" class="btn btn-primary">+Info</a>
+                <p class="card-text" *ngIf="filteredFilm.showShortDescription">{{filteredFilm.shortDescription}} ...<span class="card-text__link" (click)="onSelectRead(i)"> Leer más</span></p>
+                <p class="card-text" *ngIf="!filteredFilm.showShortDescription">{{filteredFilm.descripcion}} ...<span class="card-text__link" (click)="onSelectRead(i)"> Leer menos</span></p>
+                <p class="card-text" *ngIf="readMore">{{filteredFilm.descripcion}}</p> 
             </div>
+            <div class="card-footer">
+                <button (click)='showFilmCard(i)' type="button" class="btn btn-info btn-block">Más info ...</button>
+            </div> 
         </div>
-    t
     </div>
 </ng-container>
 

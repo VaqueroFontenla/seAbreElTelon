@@ -75,7 +75,7 @@
         "descripcion":"Un taxi recorre las vibrantes y coloridas calles de Teherán. Pasajeros muy diversos entran en el taxi y expresan abiertamente su opinión mientras charlan con el conductor, que no es otro que el director del film, Jafar Panahi. Su cámara, colocada en el salpicadero del vehículo, captura el espíritu de la sociedad iraní a través de este viaje.",
         "pais": "Irán",
         "formato": "Pelicula",
-        "generos": ["Comedia, Drama"],
+        "generos": ["Comedia", "Drama"],
         "linkito": "https://www.imdb.com/title/tt4359416/",
         "imagen": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Taxi_poster.png/220px-Taxi_poster.png"
     },
