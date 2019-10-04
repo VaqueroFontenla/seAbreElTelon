@@ -70,12 +70,18 @@ export class FilmFilterComponent implements OnInit {
 	}
 
 	onSelectFormat() {
+		this.filterRecommender.setValue(null);
+		this.filterGenre.setValue(null);
 		this.emit(this.filterFormat.value);
 	}
 	onSelectGenre() {
+		this.filterFormat.setValue(null);
+		this.filterRecommender.setValue(null);
 		this.emit(this.filterGenre.value);
 	}
 	onSelectRecommender() {
+		this.filterGenre.setValue(null);
+		this.filterFormat.setValue(null);
 		this.emit(this.filterRecommender.value);
 	}
 	

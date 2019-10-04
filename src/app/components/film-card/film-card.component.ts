@@ -28,7 +28,6 @@ export class FilmCardComponent implements OnInit {
 	this.activatedRoute.params.subscribe( params => {
 		this.filmService.getData().subscribe( films => {
 			this.film = films[params['i']];
-			console.log(this.film)
 			});
 	  	});
   	}
