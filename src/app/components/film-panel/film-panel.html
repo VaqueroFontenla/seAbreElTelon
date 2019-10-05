@@ -1,5 +1,5 @@
 <ng-container *ngIf="filteredFilms">
-    <div class="container-fluid row  justify-content-around p-4">
+    <div class="container-fluid row  justify-content-around  m-0 p-4">
         <div class="card m-4" style="width: 15rem;" *ngFor="let filteredFilm of filteredFilms; let i = index">
             <img src="{{filteredFilm.imagen}}" class="card-img-top" alt="Film image">
             <div class="card-body">
@@ -10,7 +10,6 @@
             </div>
             <div class="card-footer">
                 <a [routerLink]="['/film',i]" class='btn btn-info btn-block'>Ver más info ...</a>
-                <!-- <button routerLink="/film/i" type="button" class="btn btn-info btn-block">Más info ...</button> -->
             </div> 
         </div>
     </div>
