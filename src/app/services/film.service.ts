@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FilmService {
-	url = '../assets/data/data.json';
+	url = '../../assets/data/data.json';
 	constructor(
 		private http: HttpClient) {
 
