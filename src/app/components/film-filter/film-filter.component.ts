@@ -66,20 +66,26 @@ export class FilmFilterComponent implements OnInit {
 	}
 
 	onUnSelectFilms() {
+		this.filterGenre.setValue(null);
+		this.filterFormat.setValue(null);
+		this.filterRecommender.setValue(null);
 		this.emit(this.filterFilm.value);
 	}
 
 	onSelectFormat() {
+		this.filterFilm.setValue(null);
 		this.filterRecommender.setValue(null);
 		this.filterGenre.setValue(null);
 		this.emit(this.filterFormat.value);
 	}
 	onSelectGenre() {
+		this.filterFilm.setValue(null);
 		this.filterFormat.setValue(null);
 		this.filterRecommender.setValue(null);
 		this.emit(this.filterGenre.value);
 	}
 	onSelectRecommender() {
+		this.filterFilm.setValue(null);
 		this.filterGenre.setValue(null);
 		this.filterFormat.setValue(null);
 		this.emit(this.filterRecommender.value);

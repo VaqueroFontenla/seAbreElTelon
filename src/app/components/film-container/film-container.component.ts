@@ -7,7 +7,7 @@ import { Film } from '../../models/film';
   templateUrl: './film-container.html'
 })
 export class FilmContainerComponent implements OnInit {
-	title = 'seAbreElTelon';
+
 	//Titulos peliculas
 	initialFilms: Film[];
 	filteredFilms: Film[];
@@ -103,10 +103,11 @@ export class FilmContainerComponent implements OnInit {
 
 	private manipulateDescription(): void {
 		let filmWithShortDescription: Film[] = [];
-		filmWithShortDescription = this.filteredFilms.map(filteredFilm => {
+		filmWithShortDescription = this.filteredFilms.map((filteredFilm, index) => {
 			return {
 				shortDescription: filteredFilm.descripcion.substring(100,-1),
 				showShortDescription: true,
+				id: index,
 				...filteredFilm
 			}
 		})

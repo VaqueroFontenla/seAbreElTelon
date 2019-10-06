@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.html'
 })
 export class AppComponent {
-	title = 'seAbre ElTelon';
+	title = 'se Abre El Telón';
 
 	constructor(		
 	) { }

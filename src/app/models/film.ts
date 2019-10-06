@@ -10,5 +10,6 @@ export class Film {
     imagen: string;
     shortDescription?: string;
     showShortDescription?:boolean;
+    id?:number;
 
 }
