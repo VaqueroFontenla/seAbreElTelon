@@ -8,14 +8,14 @@
                             class="autocomplete--search"
                             id="filterFilm"
                             [formControl]="filterFilm"
-                            [suggestions]="suggestedFilms" 
+                            [suggestions]="suggestedFilms"
                             (completeMethod)="searchFilms($event)"
                             (onSelect)="onSelectFilms($event)"
                             (onClear)="onUnSelectFilms($event)"
-                            field="titulo" 
+                            field="titulo"
                             [minLength]="3">
                     </p-autoComplete>
-                </div>  
+                </div>
             </div>
         </div>
         <div class="nav-filter">
@@ -29,7 +29,7 @@
             <div class="nav-filter__item flex-fill">
                 <label for="genre">Género</label>
                 <select class="custom-select custom-select_chuchi" name="genre" id="genre" [formControl]="filterGenre" (change)="onSelectGenre($event)">
-                    <option value= "Todos" selected>Todos</option>    
+                    <option value= "Todos" selected>Todos</option>
                     <option value={{genre}} *ngFor="let genre of genres">{{genre}}</option>
                 </select>
             </div>
@@ -40,6 +40,13 @@
                         <option value={{format}} *ngFor="let format of formats">{{format}}</option>
                 </select>
             </div>
+            <div class="nav-filter__item flex-fill">
+              <label for="format">Plataforma</label>
+              <select class="custom-select custom-select__chuchi" name="platform" id="platform" [formControl]="filterPlatform" (change)="onSelectPlatform($event)">
+                      <option value= "Todas" selected>Todas</option>
+                      <option value={{platform}} *ngFor="let platform of platforms">{{platform}}</option>
+              </select>
+          </div>
         </div>
     </fieldset>
 </form>

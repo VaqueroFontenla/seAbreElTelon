@@ -1,19 +1,15 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class FilmService {
-	url = './assets/data/data.json';
-	constructor(
-		private http: HttpClient) {
+  url = "./assets/data/data.json";
+  constructor(private http: HttpClient) {}
 
-	}
-
-	getData(): Observable<any>{
-		return this.http.get(this.url);
-
-	}
+  getData(): Observable<any> {
+    return this.http.get(this.url);
+  }
 }

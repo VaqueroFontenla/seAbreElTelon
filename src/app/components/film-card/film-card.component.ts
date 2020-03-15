@@ -14,17 +14,16 @@ export class FilmCardComponent implements OnInit {
   constructor(
 		private activatedRoute: ActivatedRoute,
 		private filmService: FilmService,
-		private router: Router
   	) {
-    	
+
    }
 
   ngOnInit() {
-	  //debugger;
 	  this.loadFilm();
   }
 
   private loadFilm() {
+
 	this.activatedRoute.params.subscribe( params => {
 		this.filmService.getData().subscribe( films => {
 			this.film = films[params['i']];
