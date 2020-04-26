@@ -1,17 +1,17 @@
-<div *ngIf="filteredFilms">
+<div *ngIf='filteredFilms'>
 
 	<film-filter
-			(onFilterFilmChange)="onFilterFilmChange($event)"
-			(onFilterRecommenderChange)="onFilterRecommenderChange($event)"
-			(onFilterGenreChange)="onFilterGenreChange($event)"
-      (onFilterFormatChange)="onFilterFormatChange($event)"
-      (onFilterPlatformChange)="onFilterPlatformChange($event)"
-			[recommenders]="filteredRecommenders"
-      [genres]="filteredGenres"
-      [platforms]="filteredPlatforms"
-			[formats]="filteredFormats">
+			(onFilterFilmChange)='onFilterFilmChange($event)'
+			(onFilterRecommenderChange)='onFilterRecommenderChange($event)'
+			(onFilterGenreChange)='onFilterGenreChange($event)'
+      (onFilterFormatChange)='onFilterFormatChange($event)'
+      (onFilterPlatformChange)='onFilterPlatformChange($event)'
+			[recommenders]='filteredRecommenders'
+      [genres]='filteredGenres'
+      [platforms]='filteredPlatforms'
+			[formats]='filteredFormats'>
 	</film-filter>
 
-	<film-panel [filteredFilms]="filteredFilms"></film-panel>
+	<film-panel [filteredFilms]='filteredFilms'></film-panel>
 
 </div>

@@ -4,7 +4,7 @@ export class Film {
     descripcion: string;
     pais: string;
     formato: string;
-    generos: string[];
+    generos: string;
     linkito: string;
     imagen: string;
     plataforma: string;
