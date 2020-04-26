@@ -1,19 +1,19 @@
-import { Component, OnInit, EventEmitter, Output } from "@angular/core";
-import { Film } from "../../models/film";
-import { FormGroup, AbstractControl, FormBuilder } from "@angular/forms";
-import { FilmService } from "../../services/film.service";
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Film } from '../../models/film';
+import { FormGroup, AbstractControl, FormBuilder } from '@angular/forms';
+import { FilmService } from '../../services/film.service';
 
 @Component({
-  selector: "film-filter",
-  templateUrl: "./film-filter.html",
+  selector: 'film-filter',
+  templateUrl: './film-filter.html',
   outputs: [
-    "onFilterFilmChange",
-    "onFilterGenreChange",
-    "onFilterRecommenderChange",
-    "onFilterFormatChange",
-    "onFilterPlatformChange"
+    'onFilterFilmChange',
+    'onFilterGenreChange',
+    'onFilterRecommenderChange',
+    'onFilterFormatChange',
+    'onFilterPlatformChange'
   ],
-  inputs: ["recommenders", "genres", "formats", "platforms"]
+  inputs: ['recommenders', 'genres', 'formats', 'platforms']
 })
 export class FilmFilterComponent implements OnInit {
   //Formulario
@@ -64,7 +64,7 @@ export class FilmFilterComponent implements OnInit {
       this.suggestedFilms = suggestedFilms.filter(suggestedFilm =>
         suggestedFilm.titulo
           .toLowerCase()
-          .split(" ")
+          .split(' ')
           .includes(event.query.toLowerCase())
       );
     });
@@ -121,10 +121,10 @@ export class FilmFilterComponent implements OnInit {
       filterFormat: [null],
       filterPlatform: [null]
     });
-    this.filterFilm = this.filterFilmForm.controls["filterFilm"];
-    this.filterRecommender = this.filterFilmForm.controls["filterRecommender"];
-    this.filterGenre = this.filterFilmForm.controls["filterGenre"];
-    this.filterFormat = this.filterFilmForm.controls["filterFormat"];
-    this.filterPlatform = this.filterFilmForm.controls["filterPlatform"];
+    this.filterFilm = this.filterFilmForm.controls['filterFilm'];
+    this.filterRecommender = this.filterFilmForm.controls['filterRecommender'];
+    this.filterGenre = this.filterFilmForm.controls['filterGenre'];
+    this.filterFormat = this.filterFilmForm.controls['filterFormat'];
+    this.filterPlatform = this.filterFilmForm.controls['filterPlatform'];
   }
 }
