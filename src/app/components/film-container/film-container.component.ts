@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FilmService } from '../../services/film.service';
-import { Film } from '../../models/film';
+import { Component, OnInit } from "@angular/core";
+import { FilmService } from "../../services/film.service";
+import { Film } from "../../models/film";
 
 @Component({
-  selector: 'film-container',
-  templateUrl: './film-container.html'
+  selector: "film-container",
+  templateUrl: "./film-container.html",
 })
 export class FilmContainerComponent implements OnInit {
   // Titulos peliculas
@@ -28,15 +28,16 @@ export class FilmContainerComponent implements OnInit {
   ngOnInit() {
     this.init();
   }
+
   onFilterFilmChange(film: Film): void {
     this.filteredFilms = this.initialFilms;
     this.manipulateDescription();
-    if (typeof film === 'string') {
+    if (typeof film === "string") {
       return;
     } else {
       let filteredFilmArr: Film[] = [];
       filteredFilmArr = this.filteredFilms.filter(
-        filteredFilm => filteredFilm.titulo === film.titulo
+        (filteredFilm) => filteredFilm.id === film.id
       );
       this.filteredFilms = filteredFilmArr;
     }
@@ -45,12 +46,12 @@ export class FilmContainerComponent implements OnInit {
   onFilterRecommenderChange(recommender: string): void {
     this.filteredFilms = this.initialFilms;
     this.manipulateDescription();
-    if (recommender === 'Todas') {
+    if (recommender === "Todas") {
       return;
     } else {
       let filteredRecommenderArr: Film[] = [];
       filteredRecommenderArr = this.filteredFilms.filter(
-        filteredFilm => filteredFilm.recomendador === recommender
+        (filteredFilm) => filteredFilm.recomendador === recommender
       );
       this.filteredFilms = filteredRecommenderArr;
     }
@@ -59,11 +60,11 @@ export class FilmContainerComponent implements OnInit {
   onFilterGenreChange(genre: string): void {
     this.filteredFilms = this.initialFilms;
     this.manipulateDescription();
-    if (genre === 'Todos') {
+    if (genre === "Todos") {
       return;
     } else {
       let filteredGenrerArr: Film[] = [];
-      filteredGenrerArr = this.filteredFilms.filter(filteredFilm =>
+      filteredGenrerArr = this.filteredFilms.filter((filteredFilm) =>
         filteredFilm.generos.includes(genre)
       );
       this.filteredFilms = filteredGenrerArr;
@@ -73,27 +74,26 @@ export class FilmContainerComponent implements OnInit {
   onFilterFormatChange(format: string): void {
     this.filteredFilms = this.initialFilms;
     this.manipulateDescription();
-    if (format === 'Todos') {
+    if (format === "Todos") {
       return;
     } else {
       let filteredFormatrArr: Film[] = [];
       filteredFormatrArr = this.filteredFilms.filter(
-        filteredFilm => filteredFilm.formato === format
+        (filteredFilm) => filteredFilm.formato === format
       );
       this.filteredFilms = filteredFormatrArr;
     }
   }
 
-
   onFilterPlatformChange(platform: string): void {
     this.filteredFilms = this.initialFilms;
     this.manipulateDescription();
-    if (platform === 'Todas') {
+    if (platform === "Todas") {
       return;
     } else {
       let filteredPlatformArr: Film[] = [];
       filteredPlatformArr = this.filteredFilms.filter(
-        filteredFilm => filteredFilm.plataforma === platform
+        (filteredFilm) => filteredFilm.plataforma === platform
       );
       this.filteredFilms = filteredPlatformArr;
     }
@@ -103,7 +103,7 @@ export class FilmContainerComponent implements OnInit {
     return valuesArr.filter(
       (item, index, array) =>
         array.findIndex(
-          value => JSON.stringify(value) === JSON.stringify(item)
+          (value) => JSON.stringify(value) === JSON.stringify(item)
         ) === index
     );
   }
@@ -111,7 +111,6 @@ export class FilmContainerComponent implements OnInit {
   private filterPlatforms(): void {
     this.filteredPlatforms = this.removeDuplicates(this.platforms);
   }
-
 
   private filterFormats(): void {
     this.filteredFormats = this.removeDuplicates(this.formats);
@@ -127,42 +126,42 @@ export class FilmContainerComponent implements OnInit {
     this.filteredGenres = concatenatedGenres.filter(
       (genre, index, genres) =>
         genres.findIndex(
-          value => JSON.stringify(value) === JSON.stringify(genre)
+          (value) => JSON.stringify(value) === JSON.stringify(genre)
         ) === index
     );
   }
 
   private manipulateDescription(): void {
     let filmWithShortDescription: Film[] = [];
-    filmWithShortDescription = this.filteredFilms.map((filteredFilm, index) => {
+    filmWithShortDescription = this.filteredFilms.map((filteredFilm) => {
       return {
         shortDescription: filteredFilm.descripcion.substring(100, -1),
         showShortDescription: true,
-        id: index,
-        ...filteredFilm
+        id: filteredFilm.id,
+        ...filteredFilm,
       };
     });
     this.filteredFilms = filmWithShortDescription;
   }
 
   private init(): void {
-    this.filmService.getData().subscribe(initialFilms => {
+    this.filmService.getData().subscribe((initialFilms) => {
       this.initialFilms = initialFilms;
       this.filteredFilms = this.initialFilms;
       this.recommenders = this.filteredFilms.map(
-        filteredFilm => filteredFilm.recomendador
+        (filteredFilm) => filteredFilm.recomendador
       );
       this.filterRecommenders();
-      this.genres = this.filteredFilms.map(
-        filteredFilm => filteredFilm.generos.split(',')
+      this.genres = this.filteredFilms.map((filteredFilm) =>
+        filteredFilm.generos.split(",")
       );
       this.filterGenres();
       this.formats = this.filteredFilms.map(
-        filteredFilm => filteredFilm.formato
+        (filteredFilm) => filteredFilm.formato
       );
       this.filterFormats();
       this.platforms = this.filteredFilms.map(
-        filteredFilm => filteredFilm.plataforma
+        (filteredFilm) => filteredFilm.plataforma
       );
       this.filterPlatforms();
       this.manipulateDescription();
