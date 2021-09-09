@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class FilmService {
-  url = "http://localhost:3000/films";
+  url = "https://se-abre-el-telon.herokuapp.com/api/v1/films";
   constructor(private http: HttpClient) {}
 
   getData(): Observable<any> {
