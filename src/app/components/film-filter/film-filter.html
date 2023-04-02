@@ -1,0 +1,52 @@
+<form *ngIf="recommenders">
+    <fieldset>
+        <div class="nav-filter">
+            <div class="nav-filter__item flex-fill">
+                <label for="filterFilm">Titulo de la película</label>
+                <div class="m-0">
+                        <p-autoComplete
+                            class="autocomplete--search"
+                            id="filterFilm"
+                            [formControl]="filterFilm"
+                            [suggestions]="suggestedFilms"
+                            (completeMethod)="searchFilms($event)"
+                            (onSelect)="onSelectFilms($event)"
+                            (onClear)="onUnSelectFilms($event)"
+                            field="titulo"
+                            [minLength]="3">
+                    </p-autoComplete>
+                </div>
+            </div>
+        </div>
+        <div class="nav-filter">
+            <div class="nav-filter__item flex-fill">
+                <label for="recommender">Recomendador</label>
+                <select class="custom-select custom-select__chuchi " name="recommender" id="recommender" [formControl]="filterRecommender" (change)="onSelectRecommender()">
+                    <option value="Todas" selected>Todas</option>
+                    <option value={{recommender}} *ngFor="let recommender of recommenders">{{recommender}}</option>
+                </select>
+            </div>
+            <div class="nav-filter__item flex-fill">
+                <label for="genre">Género</label>
+                <select class="custom-select custom-select_chuchi" name="genre" id="genre" [formControl]="filterGenre" (change)="onSelectGenre($event)">
+                    <option value= "Todos" selected>Todos</option>
+                    <option value={{genre}} *ngFor="let genre of genres">{{genre}}</option>
+                </select>
+            </div>
+            <div class="nav-filter__item flex-fill">
+                <label for="format">Formato</label>
+                <select class="custom-select custom-select__chuchi" name="format" id="format" [formControl]="filterFormat" (change)="onSelectFormat($event)">
+                        <option value= "Todos" selected>Todos</option>
+                        <option value={{format}} *ngFor="let format of formats">{{format}}</option>
+                </select>
+            </div>
+            <div class="nav-filter__item flex-fill">
+              <label for="format">Plataforma</label>
+              <select class="custom-select custom-select__chuchi" name="platform" id="platform" [formControl]="filterPlatform" (change)="onSelectPlatform($event)">
+                      <option value= "Todas" selected>Todas</option>
+                      <option value={{platform}} *ngFor="let platform of platforms">{{platform}}</option>
+              </select>
+          </div>
+        </div>
+    </fieldset>
+</form>

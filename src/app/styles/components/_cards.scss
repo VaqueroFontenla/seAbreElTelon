@@ -1,0 +1,34 @@
+.card-text {
+    &__link {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+
+.card-footer {
+    display:flex;
+    justify-content: center;
+    background-color: $light;
+    border: none;
+
+}
+
+.jumbotron {
+    color: $medium-gray;
+}
+
+.film__item {
+    font-size: 1.2rem;
+    &-title {
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+    &-contens {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.display-4{
+    font-size: 2.5rem;
+}
